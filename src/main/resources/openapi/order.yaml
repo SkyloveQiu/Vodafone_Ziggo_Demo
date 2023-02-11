@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  title: Ziggo Order API
+  description: Fake data CRUD API
+  version: "1"
+servers:
+  - url: http://localhost:8080/api
+components:
+  schemas:
+    OrderGeneration:
+      type: object
+      properties:
+        productID:
+          description: "The product id that user ordered"
+          type: string
+        email:
+          description: "The email address of the user"
+          type: string
+      required:
+        - productID
+        - email
+    Order:
+      type: object
+      properties:
+        orderID:
+          description: "ID of the order"
+          type: integer
+        email:
+          description: "Email of the user"
+          type: string
+        first_name:
+          description: "The first name of the user"
+          type: string
+        last_name:
+          description: "The last name of the user"
+          type: string
+        productID:
+          description: "The ID of the product"
+          type: string
+
+    OrderResult:
+      type: object
+      properties:
+        orderID:
+          description: "The ID of the order"
+          type: integer
+
+paths:
+  /orders:
+    get:
+      operationId: "fetchOrders"
+      summary: Fetches order list
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Order'
+  /orderCreation:
+    post:
+      operationId: "creatOrders"
+      summary: Create an order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/OrderGeneration'
+
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResult'
