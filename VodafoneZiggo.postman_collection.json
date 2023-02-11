@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "be9c2367-ff80-48c5-b209-dad8e921a612",
+		"name": "VodafoneZiggo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4400298"
+	},
+	"item": [
+		{
+			"name": "OrderCreation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orderCreation?email=george.bluth@reqres.in&productId=test12345612321123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderCreation"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "george.bluth@reqres.in"
+						},
+						{
+							"key": "productId",
+							"value": "test12345612321123"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OrderCreation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orderCreation?email=george.bluth@reqres.in&productId=test12345612321123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orderCreation"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "george.bluth@reqres.in"
+								},
+								{
+									"key": "productId",
+									"value": "test12345612321123"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Feb 2023 22:14:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "OrderCreation2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orderCreation?email=janet.weaver@reqres.in&productId=test123456123211234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderCreation"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "janet.weaver@reqres.in"
+						},
+						{
+							"key": "productId",
+							"value": "test123456123211234"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OrderCreation2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orderCreation?email=janet.weaver@reqres.in&productId=test123456123211234",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orderCreation"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "janet.weaver@reqres.in"
+								},
+								{
+									"key": "productId",
+									"value": "test123456123211234"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Feb 2023 22:15:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "2"
+				}
+			]
+		},
+		{
+			"name": "OrderCreationRefused",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orderCreation?email=janet.weaver@reqres.in&productId=test123456123211234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderCreation"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "janet.weaver@reqres.in"
+						},
+						{
+							"key": "productId",
+							"value": "test123456123211234"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OrderCreationRefused",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orderCreation?email=janet.weaver@reqres.in&productId=test123456123211234",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orderCreation"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "janet.weaver@reqres.in"
+								},
+								{
+									"key": "productId",
+									"value": "test123456123211234"
+								}
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Feb 2023 22:15:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-02-11T22:15:31.700+00:00\",\n    \"status\": 409,\n    \"error\": \"Conflict\",\n    \"message\": \"Order existed, please don't reorder same product.\",\n    \"path\": \"/orderCreation\"\n}"
+				}
+			]
+		},
+		{
+			"name": "InvalidEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orderCreation?email=janet.weaver123@reqres.in&productId=test123456123211234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderCreation"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "janet.weaver123@reqres.in"
+						},
+						{
+							"key": "productId",
+							"value": "test123456123211234"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "InvalidEmail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orderCreation?email=janet.weaver123@reqres.in&productId=test123456123211234",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orderCreation"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "janet.weaver123@reqres.in"
+								},
+								{
+									"key": "productId",
+									"value": "test123456123211234"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Feb 2023 22:16:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-02-11T22:16:14.315+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Email is not registered, please register first.\",\n    \"path\": \"/orderCreation\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fetch all orders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Feb 2023 22:16:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderId\": 1,\n        \"email\": \"george.bluth@reqres.in\",\n        \"firstName\": \"George\",\n        \"lastName\": \"Bluth\",\n        \"productId\": \"test12345612321123\"\n    },\n    {\n        \"orderId\": 2,\n        \"email\": \"janet.weaver@reqres.in\",\n        \"firstName\": \"Janet\",\n        \"lastName\": \"Weaver\",\n        \"productId\": \"test123456123211234\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
