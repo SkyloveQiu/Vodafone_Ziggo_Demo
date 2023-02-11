@@ -33,10 +33,10 @@ public class Order {
     /**
      * Basic constructor for an Order
      *
-     * @param email         The email of the user
-     * @param firstName     The time at which this thread was created
-     * @param lastName      The ID of the board to which this thread belongs
-     * @param productId     The NetID of the user who posted this thread
+     * @param email     The email of the user
+     * @param firstName The time at which this thread was created
+     * @param lastName  The ID of the board to which this thread belongs
+     * @param productId The NetID of the user who posted this thread
      */
     public Order(String email, String firstName, String lastName, String productId) {
         this.email = email;
@@ -65,6 +65,7 @@ public class Order {
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getFirstName() {
         return firstName;
     }

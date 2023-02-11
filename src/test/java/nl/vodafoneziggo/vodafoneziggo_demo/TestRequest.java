@@ -1,9 +1,6 @@
 package nl.vodafoneziggo.vodafoneziggo_demo;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -41,6 +38,6 @@ public class TestRequest {
     }
     @Test
     void contextLoads() throws Exception {
-        assert validateUser("george.edwards@reqres.in") == true;
+        assert validateUser("george.edwards@reqres.in");
     }
 }
