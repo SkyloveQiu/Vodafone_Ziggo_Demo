@@ -18,8 +18,8 @@ To run this application locally, you need to use terminal and type
 To run this application in docker, you need to use terminal and type
 ```
  ./gradlew build
-  docker build --build-arg JAR_FILE=build/libs/*.jar -t vodafoneziggo/demo .
-   docker run -p 8088:8088 vodafoneziggo/demo
+ docker build --build-arg JAR_FILE=build/libs/*.jar -t vodafoneziggo/demo .
+ docker run -p 8088:8088 vodafoneziggo/demo
 ```
 
 Then this application will be run on the port `8088`.
