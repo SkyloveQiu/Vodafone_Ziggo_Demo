@@ -5,6 +5,7 @@ plugins {
     id 'org.graalvm.buildtools.native' version '0.9.18'
     id "org.asciidoctor.base" version "4.0.0-alpha.1"
     id "org.openapi.generator" version "6.2.1"
+    id 'application'
 }
 
 group = 'nl.vodafoneziggo'
@@ -62,3 +63,4 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+mainClassName = "nl.vodafoneziggo.vodafoneziggo_demo.VodafoneZiggoDemoApplication"
